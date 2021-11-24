@@ -1,12 +1,20 @@
 image video_clip = Movie(play="fire.ogv")
 
-screen gameUI_OLD:
-    imagebutton auto "UI/stats_%s.png":
-        xalign 1.0
-        yalign 0.0
-        xoffset - 30
-        yoffset 30
-        action ShowMenu("StatsUI")
+screen StatsUI:
+
+    frame:
+        background "gui/hud_status.png"
+        xalign .87
+        yalign 0.025
+
+        vbox:
+            xpos 25
+            ypos 10
+            spacing -20
+            text "Physically: [player_health_text]" color "c3cad6" size 25
+            text "Emotionally: [player_temperment_text]" color "c3cad6" size 25
+            text "Socially: [player_corruption_text]" color "c3cad6" size 25
+
 
 screen VideoClip:
     frame:

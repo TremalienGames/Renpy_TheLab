@@ -1,14 +1,26 @@
-default knows_name = False
-default inventory_list = [""]
-
-default adam_meaning = "Automated Domestic Assault Machine"
-default player_position = "sitting"
+################################################################################
+## Game Flags
+################################################################################
 default visited_lab_robot_room = False
 default completed_sceneOne = False
 default intro_complete = False
 default main_menu_flag = True
 default show_dialog = True
+default knows_name = False
+default met_worker_mech = False
+################################################################################
+## General Variables
+################################################################################
+default topics = ["who","where"]
+default startinglab_choices = ["door","arrow"]
+default robot_room_choices = ["where","how"]
+default inventory_list = [""]
+default adam_meaning = "Automated Domestic Assault Machine"
+default player_position = "sitting"
 default what_text = "nothing"
+default crawling_image =  "gui/crawling.png"
+default standing_image =  "gui/standing.png"
+default current_postion_image = crawling_image
 
 ################################################################################
 ## Images
@@ -33,6 +45,7 @@ default sfx_electric_glitch = "audio/sfx_electric_glitch.ogg"
 default sfx_bionic_wave = "audio/sfx_bionic_wave.ogg"
 default sfx_rip_arm = "audio/sfx_rip_arm.ogg"
 default sfx_power_down = "audio/sfx_power_down.ogg"
+default sfx_med_spray = "audio/sfx_med_spray.ogg"
 ################################################################################
 ## Player Stats
 ################################################################################
